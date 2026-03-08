@@ -46,15 +46,16 @@ def main():
 
     if st.button('Diabetes Result',type='primary',icon="⭐"):
         diagnosis=diabetes_prediction([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age])
-        st.balloons()
+        
 
 
     st.success(diagnosis)
-    st.toast('So whats ur decison',icon='😘',duration='short')
+    
 
 
 if __name__=='__main__':
     main()
+
 
 
 
